@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.transparent {
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  border: 2px $secondary-color solid;
+  padding: 14px 8px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: $secondary-color;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent !important;
+    border-color: darken($secondary-color, 7%) !important;
+    color: darken($secondary-color, 7%) !important;
+  }
+}

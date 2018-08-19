@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  font-size: 18px;
+  color: #337ab7;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: darken($secondary-color, 3%);
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+  }
+
+}
+
+img.sidebar-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

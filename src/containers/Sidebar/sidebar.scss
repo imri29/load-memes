@@ -1,0 +1,17 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  width: 25%;
+  height: 100%;
+  min-width: 194px;
+  z-index: 100;
+  position: fixed;
+  top: 12%;
+  right: 0;
+}
+
+.sidebar-filler {
+  height: 400px;
+  background-color: white;
+}

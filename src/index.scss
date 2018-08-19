@@ -1,0 +1,21 @@
+@import './styles/variables';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $main-color;
+  font-family: $main-font;
+  direction: rtl !important;
+}
