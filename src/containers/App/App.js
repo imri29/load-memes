@@ -16,7 +16,7 @@ import { toggleSidebarView } from '../../actions/index';
 
 class App extends Component {
   render() {
-    const { isSidebarOpen, toggleSidebarView, categoryMemes } = this.props;
+    const { isSidebarOpen, toggleSidebarView } = this.props;
 
     return (
       <div className="app-wrapper">
@@ -50,6 +50,8 @@ function mapDispatchToProps(dispatch) {
     dispatch
   );
 }
+
+
 
 export default connect(
   mapStateToProps,

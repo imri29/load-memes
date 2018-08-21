@@ -1,8 +1,8 @@
 import React from 'react';
 import './category-title.scss'
 
-const CategoryTitle = props => {
-  return <h1 className="category-title">{props.children}</h1>;
+const CategoryTitle = ({children}) => {
+  return <h1 className="category-title">{children}</h1>;
 };
 
 

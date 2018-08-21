@@ -5,19 +5,21 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import './sidebar-item.scss';
 
-
 // Actions
-import { putMemesInStore, toggleSidebarView } from '../../actions';
+import {
+  activeCategory,
+  putMemesInStore,
+  toggleSidebarView
+} from '../../actions';
 
 const SidebarItem = ({
-  title,
+  categoryName,
   icon,
   urlTitle,
   putMemesInStore,
   isSidebarOpen,
-  toggleSidebarView,
+  toggleSidebarView
 }) => {
-
   const getCategoryMemes = () => {
     const ROOT_URL = 'http://www.memeking.co.il/api/category?category=';
     const url = `${ROOT_URL}${urlTitle}`;
@@ -35,17 +37,17 @@ const SidebarItem = ({
       }}
       className="sidebar-item"
     >
-      {title}
+      {categoryName}
       <img className="sidebar-icon" src={icon} alt="icon" />
     </ListGroupItem>
   );
 };
 
-function mapStateToProps(state) {
-  return {
-    isSidebarOpen: state.sidebar.isOpen
-  };
-}
+// function mapStateToProps(state) {
+//   return {
+//     // isSidebarOpen: state.sidebar.isOpen,
+//   };
+// }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
@@ -57,7 +59,4 @@ function mapDispatchToProps(dispatch) {
   );
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SidebarItem);
+export default connect(null, mapDispatchToProps)(SidebarItem);

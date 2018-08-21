@@ -8,9 +8,9 @@ import { Spin } from 'react-burgers';
 
 // Actions
 import { toggleSidebarView } from '../../actions/index';
-import CategoryTitle from '../../components/CategoryTitle/CategoryTitle';
+// import CategoryTitle from '../../components/CategoryTitle/CategoryTitle';
 
-const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryMemes }) => {
+const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryName }) => {
   return (
     <div className="navbar">
       <Spin
@@ -18,7 +18,7 @@ const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryMemes }) => {
         active={isSidebarOpen}
         onClick={() => toggleSidebarView(!isSidebarOpen)}
       />
-      <CategoryTitle>{categoryMemes === null ? 'aba' : 'ima'}</CategoryTitle>
+      {/*<CategoryTitle>{categoryName}</CategoryTitle>*/}
     </div>
   );
 };
@@ -26,7 +26,7 @@ const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryMemes }) => {
 function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
-    categoryMemes: state.category.memes,
+    // categoryName: state.category.categoryName,
 
   };
 }

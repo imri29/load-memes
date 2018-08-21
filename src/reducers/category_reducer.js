@@ -1,7 +1,8 @@
-import { PUT_MEMES_IN_STORE } from '../actions/index';
+import { PUT_MEMES_IN_STORE, ACTIVE_CATEGORY } from '../actions/index';
 
 const initialState = {
-  memes: null
+  memes: null,
+  categoryName: null
 };
 
 export default function(state = initialState, action) {
@@ -10,6 +11,10 @@ export default function(state = initialState, action) {
     case PUT_MEMES_IN_STORE:
       return {
         memes: payload
+      };
+    case ACTIVE_CATEGORY:
+      return {
+        categoryName: payload
       };
     default:
       return state;
