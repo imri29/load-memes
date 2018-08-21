@@ -10,13 +10,13 @@ import Logo from '../../components/Logo/Logo';
 import Button from '../../components/Button/Button';
 import MemesGrid from '../MemesGrid/MemesGrid';
 
-
 // Actions
 import { toggleSidebarView } from '../../actions/index';
 
+
 class App extends Component {
   render() {
-    const { isSidebarOpen, toggleSidebarView } = this.props;
+    const { isSidebarOpen, toggleSidebarView, categoryMemes } = this.props;
 
     return (
       <div className="app-wrapper">
@@ -27,7 +27,7 @@ class App extends Component {
           block
           onClick={() => toggleSidebarView(!isSidebarOpen)}
         >
-          {isSidebarOpen ? 'סגור קטגוריה' : 'טען קטגוריה'}
+          {isSidebarOpen ? 'סגור קטגוריות' : 'טען קטגוריות'}
         </Button>
         <MemesGrid/>
         <Sidebar />
@@ -38,7 +38,7 @@ class App extends Component {
 
 function mapStateToProps(state) {
   return {
-    isSidebarOpen: state.sidebar.isOpen
+    isSidebarOpen: state.sidebar.isOpen,
   };
 }
 

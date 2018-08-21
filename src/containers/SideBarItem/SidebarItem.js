@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import './sidebar-item.scss';
 
+
 // Actions
 import { putMemesInStore, toggleSidebarView } from '../../actions';
 
@@ -14,8 +15,9 @@ const SidebarItem = ({
   urlTitle,
   putMemesInStore,
   isSidebarOpen,
-  toggleSidebarView
+  toggleSidebarView,
 }) => {
+
   const getCategoryMemes = () => {
     const ROOT_URL = 'http://www.memeking.co.il/api/category?category=';
     const url = `${ROOT_URL}${urlTitle}`;
@@ -41,7 +43,6 @@ const SidebarItem = ({
 
 function mapStateToProps(state) {
   return {
-    categoryMemes: state.category.memes,
     isSidebarOpen: state.sidebar.isOpen
   };
 }

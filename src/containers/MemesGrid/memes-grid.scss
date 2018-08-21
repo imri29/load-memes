@@ -1,4 +1,7 @@
-.meme-box {
-  height: 200px;
-  width: 200px;
+.memes-container {
+  display: flex;
+  z-index: 500;
+  flex-flow: wrap;
+  margin: 0 auto;
+  justify-content: center;
 }
