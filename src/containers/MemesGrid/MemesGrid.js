@@ -9,8 +9,7 @@ import MemeThumb from '../../components/MemeThumb/MemeThumb'
 /** TODO on hover:
  * X to kick meme out of display
  * show download amount
- * Watch Wes Bos course for it
- * */
+ */
 
 
 class MemesGrid extends Component {

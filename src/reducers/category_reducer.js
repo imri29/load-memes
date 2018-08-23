@@ -1,8 +1,8 @@
-import { PUT_MEMES_IN_STORE, ACTIVE_CATEGORY } from '../actions/index';
+import { PUT_MEMES_IN_STORE, CHANGE_ACTIVE_CATEGORY } from '../actions/index';
 
 const initialState = {
-  memes: null,
-  categoryName: null
+  memes: {},
+  categoryName: 'דף הבית'
 };
 
 export default function(state = initialState, action) {
@@ -10,10 +10,12 @@ export default function(state = initialState, action) {
   switch (type) {
     case PUT_MEMES_IN_STORE:
       return {
+        ...state,
         memes: payload
       };
-    case ACTIVE_CATEGORY:
+    case CHANGE_ACTIVE_CATEGORY:
       return {
+        ...state,
         categoryName: payload
       };
     default:

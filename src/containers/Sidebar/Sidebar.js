@@ -21,7 +21,7 @@ class Sidebar extends Component {
             return (
               <SidebarItem
                 key={item.name}
-                categoryName={item.name}
+                title={item.name}
                 icon={item.icon}
                 urlTitle={item.urlTitle}
               />
@@ -36,7 +36,6 @@ class Sidebar extends Component {
 function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
-    categoryName: state.category.categoryName
   };
 }
 

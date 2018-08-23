@@ -8,7 +8,6 @@ import { Spin } from 'react-burgers';
 
 // Actions
 import { toggleSidebarView } from '../../actions/index';
-// import CategoryTitle from '../../components/CategoryTitle/CategoryTitle';
 
 const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryName }) => {
   return (
@@ -18,7 +17,7 @@ const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryName }) => {
         active={isSidebarOpen}
         onClick={() => toggleSidebarView(!isSidebarOpen)}
       />
-      {/*<CategoryTitle>{categoryName}</CategoryTitle>*/}
+      <h2>{categoryName}</h2> {/*simply renders what's currently in the state*/}
     </div>
   );
 };
@@ -26,7 +25,7 @@ const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryName }) => {
 function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
-    // categoryName: state.category.categoryName,
+    categoryName: state.category.categoryName,
 
   };
 }

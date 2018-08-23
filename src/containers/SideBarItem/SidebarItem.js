@@ -7,13 +7,14 @@ import './sidebar-item.scss';
 
 // Actions
 import {
-  activeCategory,
+  changeActiveCategory,
   putMemesInStore,
   toggleSidebarView
 } from '../../actions';
 
 const SidebarItem = ({
-  categoryName,
+  title,
+  changeActiveCategory,
   icon,
   urlTitle,
   putMemesInStore,
@@ -34,24 +35,26 @@ const SidebarItem = ({
       onClick={() => {
         getCategoryMemes();
         toggleSidebarView(!isSidebarOpen);
+        changeActiveCategory(title);
       }}
       className="sidebar-item"
     >
-      {categoryName}
+      {title}
       <img className="sidebar-icon" src={icon} alt="icon" />
     </ListGroupItem>
   );
 };
 
-// function mapStateToProps(state) {
-//   return {
-//     // isSidebarOpen: state.sidebar.isOpen,
-//   };
-// }
+function mapStateToProps(state) {
+  return {
+    isSidebarOpen: state.sidebar.isOpen,
+  };
+}
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
+      changeActiveCategory,
       putMemesInStore,
       toggleSidebarView
     },
@@ -59,4 +62,4 @@ function mapDispatchToProps(dispatch) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(SidebarItem);
+export default connect(mapStateToProps, mapDispatchToProps)(SidebarItem);

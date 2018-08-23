@@ -16,11 +16,11 @@ export function putMemesInStore(response) {
   };
 }
 
-export const ACTIVE_CATEGORY = 'ACTIVE_CATEGORY';
+export const CHANGE_ACTIVE_CATEGORY = 'CHANGE_ACTIVE_CATEGORY';
 
-export function activeCategory(currentCategory) {
+export function changeActiveCategory (currentCategory) {
   return {
-    type: ACTIVE_CATEGORY,
+    type: CHANGE_ACTIVE_CATEGORY,
     payload: currentCategory
   };
 }
