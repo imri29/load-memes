@@ -32,7 +32,6 @@ const MemeThumb = ({
           &times;
         </span>
       </div>
-      {/*<p>{numOfDownloads}</p>*/}
     </div>
   );
 };

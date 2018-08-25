@@ -1,11 +1,14 @@
 @import '../../styles/variables';
 
 .navbar {
+  position: fixed;
+  width: 100%;
   height: 75px;
-  margin-bottom: 0;
-  //background-color: black;
   text-align: center;
+  margin-bottom: 0;
+  background-color: white;
+  z-index: 600;
   h2 {
-    color: white;
+    color: $main-color;
   }
 }

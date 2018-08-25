@@ -13,6 +13,6 @@ export default function(state = initialState, action) {
         isOpen: payload
       };
     default:
-      return state; // previous state
+      return state;
   }
 }

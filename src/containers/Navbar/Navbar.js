@@ -13,7 +13,7 @@ const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryName }) => {
   return (
     <div className="navbar">
       <Spin
-        color="white"
+        color="#0097EB"
         active={isSidebarOpen}
         onClick={() => toggleSidebarView(!isSidebarOpen)}
       />
