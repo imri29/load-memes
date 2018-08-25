@@ -25,6 +25,7 @@ class MemesGrid extends Component {
               <MemeThumb
                 thumbPath={meme.urlPath}
                 key={meme.id}
+                description={meme.description}
               />
             );
           })}

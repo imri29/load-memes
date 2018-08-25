@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png';
+
 import './logo.scss';
 
-const Logo = props => {
+// Actions
+const Logo = ({ clearMemes }) => {
+
   return (
     <div className="logo-div">
-      <img className="logo" src={logo} alt="logo" />
+      <img onClick={clearMemes} className="logo" src={logo} alt="logo" />
     </div>
   );
 };

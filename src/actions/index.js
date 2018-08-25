@@ -18,9 +18,27 @@ export function putMemesInStore(response) {
 
 export const CHANGE_ACTIVE_CATEGORY = 'CHANGE_ACTIVE_CATEGORY';
 
-export function changeActiveCategory (currentCategory) {
+export function changeActiveCategory(currentCategory) {
   return {
     type: CHANGE_ACTIVE_CATEGORY,
     payload: currentCategory
+  };
+}
+
+export const REMOVE_MEME_FROM_STORE = 'REMOVE_MEME_FROM_STORE';
+
+export function removeMemeFromStore(currentMeme) {
+  return {
+    type: REMOVE_MEME_FROM_STORE,
+    payload: currentMeme
+  };
+}
+
+export const CLEAR_MEMES_FROM_DISPLAY = 'CLEAR_MEMES_FROM_DISPLAY';
+
+export function clearMemesFromDisplay(memes) {
+  return {
+    type: CLEAR_MEMES_FROM_DISPLAY,
+    payload: {}
   };
 }

@@ -25,8 +25,7 @@ const Navbar = ({ isSidebarOpen, toggleSidebarView, categoryName }) => {
 function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
-    categoryName: state.category.categoryName,
-
+    categoryName: state.category.categoryName
   };
 }
 

@@ -11,17 +11,22 @@ import Button from '../../components/Button/Button';
 import MemesGrid from '../MemesGrid/MemesGrid';
 
 // Actions
-import { toggleSidebarView } from '../../actions/index';
-
+import { clearMemesFromDisplay, toggleSidebarView } from '../../actions/index';
 
 class App extends Component {
+
+  clearMemes = () => {
+    const {clearMemesFromDisplay, memes } = this.props;
+    clearMemesFromDisplay(memes);
+  };
+
   render() {
     const { isSidebarOpen, toggleSidebarView } = this.props;
 
     return (
       <div className="app-wrapper">
         <Navbar />
-        <Logo />
+        <Logo clearMemes={this.clearMemes} />
         <Button
           theme="transparent"
           block
@@ -39,19 +44,19 @@ class App extends Component {
 function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
+    memes: state.category.memes
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
-      toggleSidebarView
+      toggleSidebarView,
+      clearMemesFromDisplay
     },
     dispatch
   );
 }
-
-
 
 export default connect(
   mapStateToProps,

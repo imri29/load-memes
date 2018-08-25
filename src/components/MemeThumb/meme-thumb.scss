@@ -4,6 +4,11 @@
   height: 200px;
   margin: 5px;
   cursor: pointer;
+  &:hover {
+    .meme-thumb__overlay {
+      opacity: 1;
+    }
+  }
 
   .meme-thumb__img {
     height: 100%;
@@ -25,23 +30,18 @@
     transition: 0.4s;
     background: rgba(0, 0, 0, 0.5);
     z-index: 500;
-    &:hover {
-      opacity: 1;
-      .meme-thumb__times {
-        hight: 40px;
-      }
-    }
   }
+
   .meme-thumb__times {
     position: absolute;
-    color: white;
+    color: #2b2b2b;
+    font-size: 30px;
+    font-weight: 600;
     left: 10px;
-    top: 10px;
+    top: 2px;
     z-index: 501;
-    :hover {
-      /*
-      //display: inline;
-      */
+    &:hover {
+      color: darken(#2b2b2b, 3%)
     }
   }
 }

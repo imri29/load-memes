@@ -1,4 +1,9 @@
-import { PUT_MEMES_IN_STORE, CHANGE_ACTIVE_CATEGORY } from '../actions/index';
+import {
+  PUT_MEMES_IN_STORE,
+  CHANGE_ACTIVE_CATEGORY,
+  REMOVE_MEME_FROM_STORE,
+  CLEAR_MEMES_FROM_DISPLAY
+} from '../actions/index';
 
 const initialState = {
   memes: {},
@@ -7,6 +12,7 @@ const initialState = {
 
 export default function(state = initialState, action) {
   const { payload, type } = action;
+
   switch (type) {
     case PUT_MEMES_IN_STORE:
       return {
@@ -17,6 +23,15 @@ export default function(state = initialState, action) {
       return {
         ...state,
         categoryName: payload
+      };
+    case REMOVE_MEME_FROM_STORE:
+      return {
+        ...state,
+        memes: payload
+      };
+    case CLEAR_MEMES_FROM_DISPLAY:
+      return {
+        ...initialState
       };
     default:
       return state;
