@@ -26,6 +26,7 @@ class MemesGrid extends Component {
                 thumbPath={meme.urlPath}
                 key={meme.id}
                 description={meme.description}
+                rating={meme.rating}
               />
             );
           })}

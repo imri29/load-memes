@@ -39,6 +39,15 @@ export const CLEAR_MEMES_FROM_DISPLAY = 'CLEAR_MEMES_FROM_DISPLAY';
 export function clearMemesFromDisplay(memes) {
   return {
     type: CLEAR_MEMES_FROM_DISPLAY,
-    payload: {}
+    payload: []
+  };
+}
+
+export const SORT_MEMES_BY_RATING = 'SORT_MEMES_BY_RATING';
+
+export function sortMemesByRating(sortingFunction) {
+  return {
+    type: SORT_MEMES_BY_RATING,
+    payload: sortingFunction
   };
 }

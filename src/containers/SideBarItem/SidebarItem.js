@@ -1,6 +1,7 @@
 import React from 'react';
 import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 import axios from 'axios';
+import _ from 'lodash';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import './sidebar-item.scss';
@@ -26,7 +27,7 @@ const SidebarItem = ({
     const url = `${ROOT_URL}${urlTitle}`;
     axios
       .get(url)
-      .then(response => putMemesInStore(response.data))
+      .then(response => putMemesInStore(_.toArray(response.data)))
       .catch(error => console.error(error));
   };
 

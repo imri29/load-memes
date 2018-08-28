@@ -10,10 +10,11 @@ import { removeMemeFromStore } from '../../actions/index';
 const MemeThumb = ({
   thumbPath,
   description,
-  removeMemeFromStore,
-  categoryMemes
+  rating,
+  // removeMemeFromStore,
+  // categoryMemes
 }) => {
-/*
+  /*
   // try something with display:none
   const removeMeme = meme => {
    const filter = _.filter(categoryMemes, el => el.style.display = 'none'); // not good, mutates state directly.
@@ -30,6 +31,10 @@ const MemeThumb = ({
           aria-label="times"
         >
           &times;
+        </span>
+        <span className="meme-thumb__rating">
+          <i className="fas fa-download fa-xs" />
+          {rating}
         </span>
       </div>
     </div>
