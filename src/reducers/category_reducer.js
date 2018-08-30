@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import {
   PUT_MEMES_IN_STORE,
   CHANGE_ACTIVE_CATEGORY,
@@ -7,12 +8,13 @@ import {
 } from '../actions/index';
 
 const initialState = {
-  memes: [],
+  memes: null,
   categoryName: 'דף הבית'
 };
 
 export default function(state = initialState, action) {
   const { payload, type } = action;
+  console.log(action);
 
   switch (type) {
     case PUT_MEMES_IN_STORE:
@@ -28,7 +30,7 @@ export default function(state = initialState, action) {
     case REMOVE_MEME_FROM_STORE:
       return {
         ...state,
-        memes: payload
+        memes: _.omit(state.memes, payload)
       };
     case CLEAR_MEMES_FROM_DISPLAY:
       return {

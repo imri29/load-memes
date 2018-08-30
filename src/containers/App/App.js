@@ -14,19 +14,17 @@ import MemesGrid from '../MemesGrid/MemesGrid';
 import { clearMemesFromDisplay, toggleSidebarView } from '../../actions/index';
 
 class App extends Component {
-
-  clearMemes = () => {
-    const {clearMemesFromDisplay, memes } = this.props;
-    clearMemesFromDisplay(memes);
-  };
-
   render() {
-    const { isSidebarOpen, toggleSidebarView } = this.props;
+    const {
+      isSidebarOpen,
+      toggleSidebarView,
+      clearMemesFromDisplay
+    } = this.props;
 
     return (
       <div className="app-wrapper">
         <Navbar />
-        <Logo clearMemes={this.clearMemes} />
+        <Logo clearMemes={() => clearMemesFromDisplay()} />
         <Button
           theme="transparent"
           block
@@ -34,7 +32,7 @@ class App extends Component {
         >
           {isSidebarOpen ? 'סגור קטגוריות' : 'טען קטגוריות'}
         </Button>
-        <MemesGrid/>
+        <MemesGrid />
         <Sidebar />
       </div>
     );

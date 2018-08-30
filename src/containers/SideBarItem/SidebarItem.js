@@ -27,7 +27,7 @@ const SidebarItem = ({
     const url = `${ROOT_URL}${urlTitle}`;
     axios
       .get(url)
-      .then(response => putMemesInStore(_.toArray(response.data)))
+      .then(response => putMemesInStore(response.data))
       .catch(error => console.error(error));
   };
 
@@ -48,7 +48,7 @@ const SidebarItem = ({
 
 function mapStateToProps(state) {
   return {
-    isSidebarOpen: state.sidebar.isOpen,
+    isSidebarOpen: state.sidebar.isOpen
   };
 }
 
@@ -63,4 +63,7 @@ function mapDispatchToProps(dispatch) {
   );
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SidebarItem);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SidebarItem);

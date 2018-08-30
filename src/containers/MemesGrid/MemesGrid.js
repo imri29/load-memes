@@ -24,7 +24,8 @@ class MemesGrid extends Component {
             return (
               <MemeThumb
                 thumbPath={meme.urlPath}
-                key={meme.id}
+                key = {meme.id}
+                id = {meme.id}
                 description={meme.description}
                 rating={meme.rating}
               />

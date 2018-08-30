@@ -11,22 +11,15 @@ const MemeThumb = ({
   thumbPath,
   description,
   rating,
-  // removeMemeFromStore,
-  // categoryMemes
+  id,
+  removeMemeFromStore,
 }) => {
-  /*
-  // try something with display:none
-  const removeMeme = meme => {
-   const filter = _.filter(categoryMemes, el => el.style.display = 'none'); // not good, mutates state directly.
-   removeMemeFromStore(filter);
-  };*/
-
   return (
     <div className="meme-thumb__container">
       <img className="meme-thumb__img" src={thumbPath} alt={description} />
       <div className="meme-thumb__overlay" title={description}>
         <span
-          // onClick={removeMeme}
+          onClick={() => removeMemeFromStore(id)}
           className="meme-thumb__times"
           aria-label="times"
         >
