@@ -1,24 +1,27 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import _ from 'lodash';
+import SortHeading from '../../components/SortHeading/SortHeading';
 import './navbar.scss';
 
 // Components
 import { Spin } from 'react-burgers';
 
 // Actions
-import { toggleSidebarView, sortMemesByRating } from '../../actions/index';
+import {
+  toggleSidebarView,
+  sortMemesByRating,
+  sortMemesById
+} from '../../actions/index';
 
 const Navbar = ({
   isSidebarOpen,
   toggleSidebarView,
   categoryName,
-  categoryMemes,
-  sortMemesByRating
+  memes,
+  sortMemesByRating,
+  sortMemesById
 }) => {
-
-  // const sortByRating = categoryMemes.sort((a, b) => (a.rating < b.rating ? 1 : -1));
 
   return (
     <div className="navbar-container">
@@ -34,8 +37,12 @@ const Navbar = ({
       </div>
       <div className="box box-sort">
         <h4>מיין לפי:</h4>
-        <h4>רגיל</h4>
-        <h4 onClick={() => sortMemesByRating(categoryMemes.sort((a, b) => (a.rating < b.rating ? 1 : -1)))}>כמות הורדות</h4>
+        <SortHeading onClick={() => sortMemesById(memes)} eventKey={1}>
+          רגיל
+        </SortHeading>
+        <SortHeading onClick={() => sortMemesByRating(memes)} eventKey={2}>
+          כמות הורדות
+        </SortHeading>
       </div>
     </div>
   );
@@ -45,7 +52,7 @@ function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
     categoryName: state.category.categoryName,
-    categoryMemes: state.category.memes
+    memes: state.category.memes
   };
 }
 
@@ -53,7 +60,8 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       toggleSidebarView,
-      sortMemesByRating
+      sortMemesByRating,
+      sortMemesById
     },
     dispatch
   );

@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+li.sort-item {
+  list-style: none;
+  font-size: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  a:focus,
+  a:hover,
+  a:active,
+  a:visited {
+    color: $main-color !important;
+  }
+}

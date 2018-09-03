@@ -22,13 +22,9 @@
       display: flex;
       color: black;
       justify-content: space-evenly;
+      align-items: center;
       :not(:first-child) {
         cursor: pointer;
-        &:hover,
-        &:active {
-          color: darken($main-color, 7%);
-          text-decoration: none;
-        }
       }
     }
   }

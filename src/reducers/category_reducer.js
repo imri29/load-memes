@@ -4,7 +4,8 @@ import {
   CHANGE_ACTIVE_CATEGORY,
   REMOVE_MEME_FROM_STORE,
   CLEAR_MEMES_FROM_DISPLAY,
-  SORT_MEMES_BY_RATING
+  SORT_MEMES_BY_RATING,
+  SORT_MEMES_BY_ID
 } from '../actions/index';
 
 const initialState = {
@@ -39,7 +40,14 @@ export default function(state = initialState, action) {
     case SORT_MEMES_BY_RATING:
       return {
         ...state,
-        memes: payload
+        memes: _.chain(payload)
+          .orderBy('rating', 'desc')
+          .value()
+      };
+    case SORT_MEMES_BY_ID:
+      return {
+        ...state,
+        memes: payload // How to 'Undo'?
       };
     default:
       return state;

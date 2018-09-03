@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38b39d0f-2cb6-4110-9677-1bb7c9eef4d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/SortHeading/SortHeading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SortHeading/sort-heading.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MemeThumb/MemeThumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MemeThumb/MemeThumb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MemesGrid/MemesGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MemesGrid/MemesGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/SideBarItem/SidebarItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SideBarItem/SidebarItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Navbar/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Navbar/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/category_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/category_reducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -143,38 +142,40 @@
     <session id="-1873700695">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.14" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="10057" />
-          <entry key="scss" value="3659" />
+          <entry key="js" value="12562" />
+          <entry key="scss" value="4170" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="10057" />
-          <entry key="SCSS" value="3659" />
+          <entry key="JavaScript" value="12562" />
+          <entry key="SCSS" value="4170" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
           <entry key="html" value="2" />
-          <entry key="js" value="158" />
+          <entry key="js" value="169" />
           <entry key="json" value="1" />
-          <entry key="scss" value="38" />
+          <entry key="scss" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -182,13 +183,13 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="158" />
-          <entry key="SCSS" value="38" />
+          <entry key="JavaScript" value="169" />
+          <entry key="SCSS" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="PrettierLanguageServiceImpl" value="10" />
+          <entry key="PrettierLanguageServiceImpl" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -196,10 +197,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+        <entry file="file://$PROJECT_DIR$/src/components/SortHeading/SortHeading.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+            <state>
+              <caret column="31" selection-start-column="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -207,8 +208,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reducers/category_reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state relative-caret-position="353">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -217,25 +218,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MemeThumb/MemeThumb.js">
+        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="253">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/Navbar/Navbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-247">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#267#363#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/MemesGrid/MemesGrid.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Button/Button.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -243,38 +251,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/App/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-220">
+            <state relative-caret-position="-100">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/SideBarItem/SidebarItem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-239">
-              <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Sidebar/Sidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -285,8 +263,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -310,8 +288,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Button/button.scss" />
-        <option value="$PROJECT_DIR$/src/containers/MemeList/meme-list.scss" />
         <option value="$PROJECT_DIR$/src/containers/MemeList/MemeList.js" />
         <option value="$PROJECT_DIR$/src/components/MenuItem/menu-item.scss" />
         <option value="$PROJECT_DIR$/src/components/MenuItem/MenuItem.js" />
@@ -351,16 +327,18 @@
         <option value="$PROJECT_DIR$/src/reducers/sidebar_reducer.js" />
         <option value="$PROJECT_DIR$/src/containers/Sidebar/sidebar.scss" />
         <option value="$PROJECT_DIR$/src/containers/App/app.scss" />
-        <option value="$PROJECT_DIR$/src/containers/Navbar/navbar.scss" />
         <option value="$PROJECT_DIR$/src/components/MemeThumb/meme-thumb.scss" />
         <option value="$PROJECT_DIR$/src/containers/MemesGrid/memes-grid.scss" />
-        <option value="$PROJECT_DIR$/src/containers/Navbar/Navbar.js" />
-        <option value="$PROJECT_DIR$/src/actions/index.js" />
         <option value="$PROJECT_DIR$/src/containers/MemesGrid/MemesGrid.js" />
         <option value="$PROJECT_DIR$/src/components/MemeThumb/MemeThumb.js" />
         <option value="$PROJECT_DIR$/src/containers/SideBarItem/SidebarItem.js" />
-        <option value="$PROJECT_DIR$/src/reducers/category_reducer.js" />
         <option value="$PROJECT_DIR$/src/containers/App/App.js" />
+        <option value="$PROJECT_DIR$/src/containers/Navbar/navbar.scss" />
+        <option value="$PROJECT_DIR$/src/components/SortHeading/sort-heading.scss" />
+        <option value="$PROJECT_DIR$/src/components/SortHeading/SortHeading.js" />
+        <option value="$PROJECT_DIR$/src/reducers/category_reducer.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/Navbar/Navbar.js" />
       </list>
     </option>
   </component>
@@ -391,7 +369,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="814" />
+    <option name="width" value="795" />
     <option name="height" value="867" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -525,11 +503,6 @@
             <path>
               <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
               <item name="load-memes" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="load-memes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -549,7 +522,14 @@
               <item name="load-memes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="MemeThumb" type="462c0819:PsiDirectoryNode" />
+              <item name="Button" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="load-memes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SortHeading" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
@@ -569,28 +549,7 @@
               <item name="load-memes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="MemesGrid" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="load-memes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="Navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="load-memes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="Sidebar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="load-memes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="SideBarItem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="load-memes" type="b2602c69:ProjectViewProjectNode" />
@@ -688,7 +647,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="changeActiveCategory&#9;null&#9;null&#10;.burger&#9;null&#9;null&#10;style.css&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/node_modules/webpack-dev-server/client/style.css&#10;categoryName&#9;null&#9;null&#10;App&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/containers/App/App.js&#10;meme&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/components/MemeThumb/MemeThumb.js&#10;שה&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/containers/Navbar/Navbar.js&#10;.css&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/node_modules/webpack-dev-server/client/style.css" />
+    <property name="SearchEverywhereHistoryKey" value="button&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/components/Button/Button.js&#10;changeActiveCategory&#9;null&#9;null&#10;.burger&#9;null&#9;null&#10;style.css&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/node_modules/webpack-dev-server/client/style.css&#10;categoryName&#9;null&#9;null&#10;App&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/containers/App/App.js&#10;meme&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/components/MemeThumb/MemeThumb.js&#10;שה&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/src/containers/Navbar/Navbar.js&#10;.css&#9;FILE&#9;file://C:/Users/Imri/Desktop/load-memes/node_modules/webpack-dev-server/client/style.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Frontend/todo-react" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
@@ -700,16 +659,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.1.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Imri\Desktop\load-memes-ejected\src\assets\images" />
+      <recent name="C:\Users\Imri\Desktop\load-memes-redux\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Imri\Desktop\load-memes\src\components" />
       <recent name="C:\Users\Imri\Desktop\load-memes\src\containers" />
       <recent name="C:\Users\Imri\Desktop\load-memes-ejected\src\containers" />
       <recent name="C:\Users\Imri\Desktop\load-memes-ejected\src\assets\images" />
       <recent name="C:\Users\Imri\Desktop\load-memes-redux\src\components\Button" />
-      <recent name="C:\Users\Imri\Desktop\load-memes-redux\src\components\App" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Imri\Desktop\load-memes-ejected\src\assets\images" />
-      <recent name="C:\Users\Imri\Desktop\load-memes-redux\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -768,12 +727,15 @@
       <workItem from="1535292624370" duration="9850000" />
       <workItem from="1535379900735" duration="5772000" />
       <workItem from="1535466885295" duration="18747000" />
-      <workItem from="1535645012274" duration="8843000" />
+      <workItem from="1535645012274" duration="10173000" />
+      <workItem from="1535723132319" duration="2097000" />
+      <workItem from="1535898307062" duration="11806000" />
+      <workItem from="1535988848477" duration="4379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219331000" />
+    <option name="totallyTimeSpent" value="238943000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,7 +750,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="620" y="59" width="359" height="742" id="Project" order="0" visible="true" weight="0.15488432" />
+      <window_info content_ui="combo" x="620" y="59" width="359" height="742" id="Project" order="0" visible="true" weight="0.16066837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -802,7 +764,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.287062" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29784366" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -817,13 +779,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.30e0db1f.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.30e0db1f.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/static/media/logo.253c3d60.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -894,13 +849,6 @@
     <entry file="file://$PROJECT_DIR$/config/jest/fileTransform.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CategoryTitle/category-title.scss" />
     <entry file="file://$PROJECT_DIR$/src/reducers/title_reducer.js" />
     <entry file="file://$PROJECT_DIR$/src/components/CategoryTitle/CategoryTitle.js" />
@@ -936,16 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Button/Button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Navbar/navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/sidebar_reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1029,6 +960,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MemeThumb/MemeThumb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Navbar/navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MemesGrid/MemesGrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1036,10 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Navbar/Navbar.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/SideBarItem/SidebarItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="380">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1048,59 +1006,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Sidebar/Sidebar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="660">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MemesGrid/MemesGrid.js">
+    <entry file="file://$PROJECT_DIR$/src/components/SortHeading/sort-heading.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MemeThumb/MemeThumb.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/SideBarItem/SidebarItem.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Button/Button.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
+        <state relative-caret-position="-100">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SortHeading/SortHeading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        <state relative-caret-position="253">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Navbar/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#267#363#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/category_reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        <state relative-caret-position="353">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
