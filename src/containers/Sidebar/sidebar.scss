@@ -1,17 +1,19 @@
+@import '../../styles/variables';
+
 .sidebar {
   display: flex;
+  position: fixed;
   flex-direction: column;
-  max-width: 350px;
-  min-width: 194px;
+  top: 75px;
+  right: 0;
   width: 25%;
   height: 100%;
   z-index: 600;
-  position: fixed;
-  top: 75px;
-  right: 0;
-}
-
-.sidebar-filler {
-  height: 400px;
-  background-color: white;
+  .sidebar-filler {
+    height: 400px;
+    background-color: $white;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }

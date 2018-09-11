@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import './app.scss';
 
 // Components
 import Sidebar from '../../containers/Sidebar/Sidebar';
@@ -14,6 +13,7 @@ import MemesGrid from '../MemesGrid/MemesGrid';
 import { clearMemesFromDisplay, toggleSidebarView } from '../../actions/index';
 
 class App extends Component {
+
   render() {
     const {
       isSidebarOpen,
@@ -22,7 +22,7 @@ class App extends Component {
     } = this.props;
 
     return (
-      <div className="app-wrapper">
+      <React.Fragment>
         <Navbar />
         <Logo clearMemes={() => clearMemesFromDisplay()} />
         <Button
@@ -34,7 +34,7 @@ class App extends Component {
         </Button>
         <MemesGrid />
         <Sidebar />
-      </div>
+      </React.Fragment>
     );
   }
 }

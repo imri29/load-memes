@@ -1,11 +1,11 @@
 .logo-div {
-  text-align: center;
-}
-
-img.logo {
   width: 100px;
   height: 100px;
-  cursor: pointer;
-  margin-top: 120px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  img.logo {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
 }

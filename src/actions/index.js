@@ -4,7 +4,7 @@ export const CHANGE_ACTIVE_CATEGORY = 'CHANGE_ACTIVE_CATEGORY';
 export const REMOVE_MEME_FROM_STORE = 'REMOVE_MEME_FROM_STORE';
 export const CLEAR_MEMES_FROM_DISPLAY = 'CLEAR_MEMES_FROM_DISPLAY';
 export const SORT_MEMES_BY_RATING = 'SORT_MEMES_BY_RATING';
-export const SORT_MEMES_BY_ID = 'SORT_MEMES_BY_ID';
+export const SORT_MEMES_BY_DATE = 'SORT_MEMES_BY_DATE';
 
 export function toggleSidebarView(isOpen) {
   return {
@@ -45,9 +45,9 @@ export function sortMemesByRating(memes) {
   };
 }
 
-export function sortMemesById(memes) {
+export function sortMemesByDate(memes) {
   return {
-    type: SORT_MEMES_BY_ID,
+    type: SORT_MEMES_BY_DATE,
     payload: memes
   };
 }

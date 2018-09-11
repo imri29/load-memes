@@ -3,8 +3,9 @@ import BSButton from 'react-bootstrap/lib/Button';
 import './button.scss';
 import { connect } from 'react-redux';
 
-const Button = ({ onClick, theme, children, categoryName }) => {
+const Button = ({ onClick, theme, children, categoryName, }) => {
   if (categoryName !== 'דף הבית') return null;
+
 
   return (
     <BSButton onClick={onClick} className={theme}>

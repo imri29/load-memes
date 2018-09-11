@@ -1,8 +1,9 @@
+@import '../../styles/variables';
+
 .meme-thumb__container {
   position: relative;
   width: 200px;
   height: 200px;
-  //margin: 5px;
   border: 5px black solid;
   cursor: pointer;
   &:hover {
@@ -36,19 +37,19 @@
 
   .meme-thumb__times {
     position: absolute;
-    color: white;
+    color: $white;
     font-size: 30px;
     font-weight: 600;
     left: 10px;
     top: 2px;
     z-index: 501;
     &:hover {
-      color: darken(whitesmoke, 10%);
+      color: darken($white-hover, 12%);
     }
   }
   span.meme-thumb__rating {
     position: absolute;
-    color: mintcream;
+    color: $white;
     margin-right: 6px;
     font-size: 16px;
     bottom: 4px;
@@ -57,5 +58,4 @@
       font-size: 16px;
     }
   }
-
 }

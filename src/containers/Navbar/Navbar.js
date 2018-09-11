@@ -1,17 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import SortHeading from '../../components/SortHeading/SortHeading';
 import './navbar.scss';
 
 // Components
 import { Spin } from 'react-burgers';
+import SortHeading from '../../components/SortHeading/SortHeading';
 
 // Actions
 import {
   toggleSidebarView,
   sortMemesByRating,
-  sortMemesById
+  sortMemesByDate
 } from '../../actions/index';
 
 const Navbar = ({
@@ -20,9 +20,8 @@ const Navbar = ({
   categoryName,
   memes,
   sortMemesByRating,
-  sortMemesById
+  sortMemesByDate
 }) => {
-
   return (
     <div className="navbar-container">
       <div className="box">
@@ -37,8 +36,8 @@ const Navbar = ({
       </div>
       <div className="box box-sort">
         <h4>מיין לפי:</h4>
-        <SortHeading onClick={() => sortMemesById(memes)} eventKey={1}>
-          רגיל
+        <SortHeading onClick={() => sortMemesByDate(memes)} eventKey={1}>
+          תאריך
         </SortHeading>
         <SortHeading onClick={() => sortMemesByRating(memes)} eventKey={2}>
           כמות הורדות
@@ -61,7 +60,7 @@ function mapDispatchToProps(dispatch) {
     {
       toggleSidebarView,
       sortMemesByRating,
-      sortMemesById
+      sortMemesByDate
     },
     dispatch
   );

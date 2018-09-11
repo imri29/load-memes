@@ -1,7 +1,6 @@
 import React from 'react';
 import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 import axios from 'axios';
-import _ from 'lodash';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import './sidebar-item.scss';
