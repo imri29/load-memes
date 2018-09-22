@@ -38,16 +38,14 @@ export function clearMemesFromDisplay() {
   };
 }
 
-export function sortMemesByRating(memes) {
+export function sortMemesByRating() {
   return {
     type: SORT_MEMES_BY_RATING,
-    payload: memes
   };
 }
 
-export function sortMemesByDate(memes) {
+export function sortMemesByDate() {
   return {
     type: SORT_MEMES_BY_DATE,
-    payload: memes
   };
 }

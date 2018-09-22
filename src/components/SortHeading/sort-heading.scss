@@ -8,11 +8,13 @@ li.sort-item {
   a:link {
     text-decoration: none;
     color: black;
+    &:hover {
+      color: $main-color;
+    }
   }
-  a:focus,
-  a:hover,
-  a:active,
-  a:visited {
-    color: $main-color !important;
+  &.active {
+    a {
+      color: $main-color;
+    }
   }
 }

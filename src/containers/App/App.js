@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import _ from 'lodash';
 
 // Components
 import Sidebar from '../../containers/Sidebar/Sidebar';
@@ -13,25 +14,27 @@ import MemesGrid from '../MemesGrid/MemesGrid';
 import { clearMemesFromDisplay, toggleSidebarView } from '../../actions/index';
 
 class App extends Component {
-
   render() {
     const {
       isSidebarOpen,
       toggleSidebarView,
-      clearMemesFromDisplay
+      clearMemesFromDisplay,
+      memes
     } = this.props;
 
     return (
       <React.Fragment>
         <Navbar />
-        <Logo clearMemes={() => clearMemesFromDisplay()} />
-        <Button
-          theme="transparent"
-          block
-          onClick={() => toggleSidebarView(!isSidebarOpen)}
-        >
-          {isSidebarOpen ? 'סגור קטגוריות' : 'טען קטגוריות'}
-        </Button>
+        <Logo onClick={() => clearMemesFromDisplay()} />
+        {_.isEmpty(memes) && (
+          <Button
+            theme="transparent"
+            block
+            onClick={() => toggleSidebarView(!isSidebarOpen)}
+          >
+            {isSidebarOpen ? 'סגור קטגוריות' : 'טען קטגוריות'}
+          </Button>
+        )}
         <MemesGrid />
         <Sidebar />
       </React.Fragment>

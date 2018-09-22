@@ -27,7 +27,6 @@ class Sidebar extends Component {
               />
             );
           })}
-          <ListGroup bsClass="sidebar-filler" />
         </ListGroup>
     );
   }

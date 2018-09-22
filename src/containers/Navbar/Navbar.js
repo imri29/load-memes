@@ -20,7 +20,8 @@ const Navbar = ({
   categoryName,
   memes,
   sortMemesByRating,
-  sortMemesByDate
+  sortMemesByDate,
+  filterType
 }) => {
   return (
     <div className="navbar-container">
@@ -36,10 +37,16 @@ const Navbar = ({
       </div>
       <div className="box box-sort">
         <h4>מיין לפי:</h4>
-        <SortHeading onClick={() => sortMemesByDate(memes)} eventKey={1}>
+        <SortHeading
+          active={filterType === 'date'}
+          onClick={() => sortMemesByDate()}
+        >
           תאריך
         </SortHeading>
-        <SortHeading onClick={() => sortMemesByRating(memes)} eventKey={2}>
+        <SortHeading
+          active={filterType === 'rating'}
+          onClick={() => sortMemesByRating()}
+        >
           כמות הורדות
         </SortHeading>
       </div>
@@ -51,7 +58,7 @@ function mapStateToProps(state) {
   return {
     isSidebarOpen: state.sidebar.isOpen,
     categoryName: state.category.categoryName,
-    memes: state.category.memes
+    filterType: state.category.filterType
   };
 }
 

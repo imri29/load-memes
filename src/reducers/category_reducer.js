@@ -10,11 +10,11 @@ import {
 
 const initialState = {
   memes: null,
-  categoryName: 'דף הבית'
+  categoryName: 'דף הבית',
+  filterType: ''
 };
 
 export default function(state = initialState, action) {
-
   const { payload, type } = action;
 
   switch (type) {
@@ -40,16 +40,14 @@ export default function(state = initialState, action) {
     case SORT_MEMES_BY_RATING:
       return {
         ...state,
-        memes: _.chain(payload)
-          .orderBy('rating', 'desc')
-          .value()
+        filterType: 'rating',
+        memes: _.orderBy(state.memes, ['rating'], ['desc'])
       };
     case SORT_MEMES_BY_DATE:
       return {
         ...state,
-        memes: _.chain(payload)
-          .orderBy('date', 'asc')
-          .value()
+        filterType: 'date',
+        memes: _.orderBy(state.memes, ['date'], ['asc'])
       };
     default:
       return state;
