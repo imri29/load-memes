@@ -8,8 +8,7 @@ import MemeThumb from '../../components/MemeThumb/MemeThumb';
 
 class MemesGrid extends Component {
   render() {
-    const { categoryMemes, putMemesInStore } = this.props;
-    if (putMemesInStore && !categoryMemes) return <p>Loading...</p>;
+    const { categoryMemes } = this.props;
 
     return (
       <div className="memes-container">

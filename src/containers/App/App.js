@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <Logo onClick={() => clearMemesFromDisplay()} />
+        <Logo onClick={() => clearMemesFromDisplay()} title="נקה תצוגה" />
         {_.isEmpty(memes) && (
           <Button
             theme="transparent"
