@@ -33,12 +33,6 @@ const MemeThumb = ({
   );
 };
 
-function mapStateToProps(state) {
-  return {
-    categoryMemes: state.category.memes
-  };
-}
-
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
@@ -49,6 +43,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(MemeThumb);

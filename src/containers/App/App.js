@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import _ from 'lodash';
@@ -23,7 +23,7 @@ class App extends Component {
     } = this.props;
 
     return (
-      <React.Fragment>
+      <Fragment>
         <Navbar />
         <Logo onClick={() => clearMemesFromDisplay()} title="נקה תצוגה" />
         {_.isEmpty(memes) && (
@@ -37,7 +37,7 @@ class App extends Component {
         )}
         <MemesGrid />
         <Sidebar />
-      </React.Fragment>
+      </Fragment>
     );
   }
 }

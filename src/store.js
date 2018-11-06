@@ -1,15 +1,14 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore } from 'redux';
 import reducers from './reducers/index';
-import logger from 'redux-logger';
 import { loadState, saveState } from './localStorage';
 
 const persistedState = loadState();
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const reduxDevtools = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__();
 const store = createStore(
   reducers,
   persistedState,
-  composeEnhancers(applyMiddleware(logger))
+  reduxDevtools
 );
 
 store.subscribe(() => {
