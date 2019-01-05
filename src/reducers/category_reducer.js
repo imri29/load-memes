@@ -53,3 +53,9 @@ export default function(state = initialState, action) {
       return state;
   }
 }
+
+
+const state = {
+  memes: {'1': {}, '2': {}, '3': {}},
+  limit: 8
+};

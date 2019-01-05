@@ -5,6 +5,7 @@ import { loadState, saveState } from './localStorage';
 const persistedState = loadState();
 
 const reduxDevtools = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__();
+
 const store = createStore(
   reducers,
   persistedState,
