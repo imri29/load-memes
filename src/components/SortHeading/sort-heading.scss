@@ -17,4 +17,8 @@ li.sort-item {
       color: $main-color;
     }
   }
+  @media (max-width: $mobile-size) {
+    margin: 2px;
+    padding: 0;
+  }
 }
