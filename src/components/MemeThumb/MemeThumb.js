@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import './meme-thumb.scss';
 
 // Actions
@@ -11,7 +10,7 @@ const MemeThumb = ({
   description,
   rating,
   id,
-  removeMemeFromStore,
+  removeMemeFromStore
 }) => {
   return (
     <div className="meme-thumb__container">
@@ -20,7 +19,7 @@ const MemeThumb = ({
         <span
           onClick={() => removeMemeFromStore(id)}
           className="meme-thumb__times"
-          aria-label="times"
+          aria-label="Close"
         >
           &times;
         </span>
@@ -33,16 +32,7 @@ const MemeThumb = ({
   );
 };
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(
-    {
-      removeMemeFromStore
-    },
-    dispatch
-  );
-}
-
 export default connect(
   null,
-  mapDispatchToProps
+  { removeMemeFromStore }
 )(MemeThumb);
